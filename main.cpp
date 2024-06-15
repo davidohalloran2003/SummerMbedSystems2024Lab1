@@ -18,8 +18,6 @@ int main()
 
 bluebtn.fall(&bttnFall);
 
-
-
     // this is a program for lab 1 embedded systems
 
     while (true) {
@@ -27,8 +25,9 @@ bluebtn.fall(&bttnFall);
             int_trig = 0;
             printf("bttnFall \r\n");
 
-        }
+        
            
 
         }
+}
 }
