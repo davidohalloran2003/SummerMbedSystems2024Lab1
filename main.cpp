@@ -12,6 +12,8 @@ Original Error "Error Message: Mutex: 0x200015FC, Not allowed in ISR context" - 
 When the blue bttn is pressed it will remain a continuous "buttonfall" until releaesed and then print a continuous "bttnrise" as file one will always be running. The fix is to write a rest into the code. 
 
 Note: ensure the functions are being called which in turn will ensure the value is being changed when a change happens. Key termn in this case is 'volatile'
+
+So finally when the code is downloaded to the mbed and the bluebttn is pressed a message is printed to CoolTerm to indicate this, printed as 'bttnFall' 
 */
 
 InterruptIn bluebtn(PC_13);
